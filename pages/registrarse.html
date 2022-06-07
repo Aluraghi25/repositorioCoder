@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Workforce - Servicios</title>
-</head>
-<body>
-    <header class="encabezado">
+    <title>Workforce - Registrarse</title>
+  </head>
+  <body>
+    <header>
 
         <nav class="navbar navbar-expand-lg navPropio">
             <div class="container-fluid d-lg-flex flex-lg-row justify-content-lg-center align-items-lg-center gap-lg-5">
@@ -49,10 +49,6 @@
                   </li>
                 </ul>
 
-                <div>
-                    <a class="btn btn-primary btn-sm confBoton" href="./inicio.html" target="_blank">Iniciar Sesion</a>
-                </div>
-
                 <form class="d-flex" role="search">
                   <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -62,69 +58,19 @@
             </div>
           </nav>
 
-        <!--<nav class="nav">
-            <a href="../index.html"><img src="../img/Picture1-modified.png" alt="Logo del Sitio" class="imagen">
-            </a> 
- 
-             <ul class="navegacion">
-                 <li> <a href="../index.html"> Home </a> </li>
-                 <li> <a href="./empresa.html"> Empresa </a> </li>
-                 <li> <a href="./servicios.html"> Servicios </a> </li>
-                 <li> <a href="./clientes.html"> Clientes </a> </li>
-                 <li> <a href="./contacto.html"> Contacto </a> </li>
-             </ul>       
-              
-             <div>
-                 <input type="button" value="Solicitar">
-                 <input type="button" value="Ingresar">
-             </div>
- 
-             <div>
-                 <label for="Idioma">
-                 </label>
-                 <select name="Idioma" id="">
-                     <option value="Ingles">Eng</option>
-                     <option value="Español">Esp</option>    
-                 </select>
-             </div>
-         </nav> -->
     </header>
 
-    <main class="colorFondo">
-        <section class="galeria">
-         <h1 class="titulo-principal tituloFormato"> Servicios </h1>
-         <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit aspernatur reiciendis laborum, aperiam laudantium unde mollitia aliquid officiis placeat voluptates eveniet minus sunt tempore reprehenderit similique quidem blanditiis. At?
-         Accusantium quasi delectus temporibus ut eaque. Eum facilis dolores magnam laboriosam eligendi unde nulla voluptas nam earum molestiae laborum, incidunt temporibus maiores consectetur quod porro ipsam soluta. Officia, minima quasi?
-          Error eum dolores pariatur molestiae? Ex perferendis, odio voluptatibus fugit pariatur saepe consectetur aperiam, quisquam officia labore hic exercitationem deleniti possimus quas iure ut eaque! Quo impedit accusantium in sed.
-         Accusamus quo error dolorum enim exercitationem eum vero, tenetur assumenda earum quam, corporis nemo dolor dicta. Alias ut dignissimos doloribus explicabo, placeat pariatur nam dicta vitae asperiores facilis eius officia.
-         Fuga illo exercitationem provident sequi aut magni nemo veritatis vitae, ipsa possimus numquam corporis reiciendis cum corrupti accusamus! Rem nostrum odio possimus a molestiae hic quasi laudantium voluptate quod ut?</p>
-
-            <div class="contenedor-img">
-                <div class="imgServicios">
-                    <img src="../img/instalacion.jpg" alt="Instalaciones">
-                </div>
-
-                <div class="imgServicios">
-                    <img src="../img/servicio-tecnico-oficial.jpg" alt="Servicio Tecnico">
-                </div>
-
-                <div class="imgServicios">
-                    <img src="../img/servicios.jpg" alt="Soporte Tecnico Telefonico">
-                </div>
-
-                <div class="imgServicios">
-                    <img src="../img/capacitacion.jpg" alt="Capacitaciones">
-                </div>
-
-                <div class="imgServicios">
-                    <img src="../img/garantia.jpg" alt="Garantia">
-                </div>
-
-                <div class="imgServicios">
-                    <img src="../img/Presupuesto.jpg" alt="Presupuestos a Medida">
-                </div>
-            </div>
+    <main class="encabezadoDos">
+        <section class="form-registrarse">
+            <h3>Completar Formulario de Registracion</h3>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido">
+            <input class="controls" type="email" name="correos" id="correos" placeholder="Ingrese su Correo Electronico">
+            <input class="controls" type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese su Contraseña">
+            <p><input type="checkbox"> Aceptar los<a href="#">Terminos y Condiciones</a></p>
+            <input class="buttons" type="submit" value="Registrarse">
+            <p><a href="./inicio.html">¿Ya Tenes una Cuenta? Iniciar Sesion</a></p>
         </section>
+      
     </main>
 
     <footer class="pie">
@@ -170,6 +116,6 @@
     <script>
         AOS.init();
     </script>
-    
+
 </body>
 </html>
