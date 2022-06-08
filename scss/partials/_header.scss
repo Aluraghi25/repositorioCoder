@@ -7,14 +7,13 @@
     .navPropio {    
         background-color: $color-principal;
         position: fixed;
-        width: 100%;
-        z-index: 9999;
+        @include nav;
         top: 0;
     }
 
     .confBoton {
-        margin-right: 4rem;
-        font-weight: bold;
+        @extend %inicioSesion;
+        margin-right: map-get($map: $iniciar, $key: margin-iniciar);
     }
 }
 

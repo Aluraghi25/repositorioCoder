@@ -1,0 +1,64 @@
+@media screen and (max-width: 500px) {
+
+    .encabezado {
+        height: 100vp; 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(16, 16, 16);
+    }
+
+    nav ul li a {
+        font-size: xx-small;
+    }
+
+    .titulo-principal {
+        margin-top: -19rem;
+    }
+
+    .imagenPie {       
+        margin-left: 1rem; 
+        width: 40rem;
+    }
+
+    .companyName {
+        font-size: small;
+        margin-left: -0.5rem;
+    }
+
+    .infoNecesaria {
+        font-size: small;
+        margin-top: 1rem;
+    }
+
+    .tituloRedes {
+        font-size: x-small;
+        margin-right: 1rem;
+    }
+
+    .redesSociales {
+        margin-right: 0%;
+        margin-bottom: 1rem;
+    }
+
+    .pieFirma {
+        font-size: xx-small;
+    }
+
+    .textoCasos {
+        width: 100%;
+    }
+
+    .confBoton {
+        margin-left: 11rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-registrarse {
+        transform: translate(1%, 22%);
+        box-shadow: none;
+    }
+
+    .formularioInicio {
+        transform: translate(-50%, -38%);
+    }
+}
