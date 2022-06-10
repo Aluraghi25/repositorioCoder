@@ -15,6 +15,10 @@
         @extend %inicioSesion;
         margin-right: map-get($map: $iniciar, $key: margin-iniciar);
     }
+
+    .hola {
+        color: aqua;
+    }
 }
 
 .nav-item a {
