@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo.ico">
     <title>Workforce - Time Management</title>
 </head>
 <body>
-    <header class="encabezado">
-
+    <header>
+        
         <nav class="navbar navbar-expand-lg navPropio">
             <div class="container-fluid d-lg-flex flex-lg-row justify-content-lg-center align-items-lg-center gap-lg-5">
-              <a class="navbar-brand" href="#"><img src="./img/Picture1-modified.png" alt="Logo de la Compañia" height="64px"></a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/Picture1-modified.png" alt="Logo de la Compañia" height="64px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -63,6 +64,24 @@
             </div>
           </nav>
 
+          <div class="container-portada">
+                <div class="capa-gradient"></div>
+                <div class="container-detalles"></div>
+                    <div class="detalles">
+                        <h1>Solución de gestión de horarios para RR. HH. en grandes empresas</h1>
+                        <p>Registre todo tipo de novedades del personal de su empresa. Utilice nuestro Sistema Web Seguro y obtenga información actual, histórica y estadística</p>
+                        <div>
+                            <ul>
+                                <li>Registro preciso de horas trabajadas, llegadas tarde, salidas anticipadas, descansos/pausas y ausentismo.</li>
+                                <li>Integración con sistemas payroll y HCM.</li>
+                                <li>Módulos interactivos autogestionables y workflow.</li>
+                                <li>Implementación a medida.</li>
+                            </ul>
+                        </div>
+                        <button>Solicitar Cotización</button>
+                    </div>
+          </div>
+
         <!-- <nav class="nav">
              <a href="./index.html"><img src="./img/Picture1-modified.png" alt="Logo del Sitio" class="imagen">
              </a> 
@@ -93,63 +112,68 @@
     </header>
     
     <main class="colorFondo">
-        <h1 class="titulo-principal tituloFormato"> Bienvenido a la Era de la Digitalizacion con Workforce </h1>
 
-        <div>
-            <p class="subtitulo"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, voluptatibus. Nemo, repellendus quia nesciunt voluptatum, quos libero deserunt voluptate impedit quae tempore quasi explicabo qui tenetur ipsam soluta recusandae eum. </p>
-        </div>
-
-    <section class="seccion">
-        <div class="subSeccion">
-            <img data-aos="flip-left" src="./img/reloj-fichadas.jpg" alt="Reloj de Fichadas">
-            <h2>Control Horario</h2>
-            <p>La gestión de los horarios de tu equipo nunca fue tan fácil y rápida. Desde un solo panel puedes editar, agregar comentarios o eliminar jornadas. Toda la información y cambios quedarán guardados y registrados.</p>
+        <section>
             <div>
-                <p>Exporta reportes por colaborador, jornadas trabajadas, licencias, sucursales de trabajo, datos demográficos ¡y más!</p>
+                <h2 class="titulo-principal tituloFormato"> Bienvenido a la Era de la Digitalizacion con Workforce </h2>
             </div>
+
             <div>
-                <p>¿Tus colaboradores se olvidan de registrar los horarios de sus jornadas? No hay problema: configura la corrección automática de marcas y evita tareas repetitivas.</p>
+                <p class="subtitulo"> Workforce es una solución integral de gestión de la jornada laboral del personal, que hace más productiva al área de Recursos Humanos en empresas de todos los tamaños. Permite medir con exactitud el tiempo trabajado por cada empleado y consolidar rápidamente las novedades para la liquidación de sueldos. </p>
             </div>
-        </div>
+        </section>
 
-        <div class="subSeccion">
-            <img data-aos="flip-right" src="./img/geolocalizacion.jpg" alt="Geolocalizacion">
-            <h2>Geolocalizacion</h2>
-            <p>Identifica los puntos de registro horario de tus empleados. Conoce el lugar y horario en el que iniciaron o terminaron su jornada.</p>
-            <div>
-                <p>Con nuestra herramienta podrás asignar y limitar sucursales o espacios de trabajo específicos para que tus colaboradores puedan registrar marcas únicamente allí.</p>
+        <section class="seccion">
+            <div class="subSeccion">
+                <img data-aos="flip-left" src="./img/reloj-fichadas.jpg" alt="Reloj de Fichadas">
+                <h2>Control Horario</h2>
+                <p>La gestión de los horarios de tu equipo nunca fue tan fácil y rápida. Desde un solo panel puedes editar, agregar comentarios o eliminar jornadas. Toda la información y cambios quedarán guardados y registrados.</p>
+                <div>
+                    <p>Exporta reportes por colaborador, jornadas trabajadas, licencias, sucursales de trabajo, datos demográficos ¡y más!</p>
+                </div>
+                <div>
+                    <p>¿Tus colaboradores se olvidan de registrar los horarios de sus jornadas? No hay problema: configura la corrección automática de marcas y evita tareas repetitivas.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="subSeccion">
-            <img data-aos="flip-left" src="./img/licencias.jpg" alt="Licencias" >
-            <h2>Licencias Especiales</h2>
-            <p>¡Las licencias pueden dejar de ser un problema!
+            <div class="subSeccion">
+                <img data-aos="flip-right" src="./img/geolocalizacion.jpg" alt="Geolocalizacion">
+                <h2>Geolocalizacion</h2>
+                <p>Identifica los puntos de registro horario de tus empleados. Conoce el lugar y horario en el que iniciaron o terminaron su jornada.</p>
+                <div>
+                    <p>Con nuestra herramienta podrás asignar y limitar sucursales o espacios de trabajo específicos para que tus colaboradores puedan registrar marcas únicamente allí.</p>
+                </div>
+            </div>
 
-            Centraliza la información de las solicitudes de días, con los motivos del pedido, plazos, adjunta certificados y toda la documentación respaldatoria.
+            <div class="subSeccion">
+                <img data-aos="flip-left" src="./img/licencias.jpg" alt="Licencias" >
+                <h2>Licencias Especiales</h2>
+                <p>¡Las licencias pueden dejar de ser un problema!
+
+                Centraliza la información de las solicitudes de días, con los motivos del pedido, plazos, adjunta certificados y toda la documentación respaldatoria.
                 
-            Accede en cualquier momento de manera online y segura.</p>
+                Accede en cualquier momento de manera online y segura.</p>
 
-            <div>
-                <p>Comprende y analiza el ausentismo en tu empresa para implementar acciones con impacto.</p>
-            </div>
+                <div>
+                    <p>Comprende y analiza el ausentismo en tu empresa para implementar acciones con impacto.</p>
+                </div>
             
-            <div>
-                <p>Establece plazos disponibles en horas o días para cada tipo de licencia y asigna responsables de aprobación por sector.</p>
+                <div>
+                    <p>Establece plazos disponibles en horas o días para cada tipo de licencia y asigna responsables de aprobación por sector.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="subSeccion">
-            <img data-aos="flip-right" src="./img/organigrama.jpg" alt="Organigrama Empresarial">
-            <h2>Organigramas Empresariales</h2>
-            <p>Configura la estructura organizacional, asigna jerarquías, ¡y listo! Cada cambio en tu empresa se verá reflejado automáticamente en el organigrama, ¡sin necesidad de hacer algo más!</p>
+            <div class="subSeccion">
+                <img data-aos="flip-right" src="./img/organigrama.jpg" alt="Organigrama Empresarial">
+                <h2>Organigramas Empresariales</h2>
+                <p>Configura la estructura organizacional, asigna jerarquías, ¡y listo! Cada cambio en tu empresa se verá reflejado automáticamente en el organigrama, ¡sin necesidad de hacer algo más!</p>
 
-            <div>
-                <p>Descárgalo en el formato que necesites y úsalo en presentaciones ¡y más!</p>
+                <div>
+                    <p>Descárgalo en el formato que necesites y úsalo en presentaciones ¡y más!</p>
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
     </main>
 
@@ -164,16 +188,7 @@
         </div>
 
         <div class="infoNecesaria">
-             <p><i class="bi bi-geo-alt-fill"></i>  Buenos Aires, Argentina</p>
-
-            <div>
-                <p><i class="bi bi-telephone-fill"></i> 1155555555</p>
-            </div>
-
-            <div>
-                <p><i class="bi bi-envelope-fill"></i> xxxx@workforce.com</p>
-            </div>
-
+            <p><i class="bi bi-geo-alt-fill"></i>Buenos Aires, Argentina</p>
         </div>
 
         <div class="tituloRedes">

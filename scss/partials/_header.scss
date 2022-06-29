@@ -1,0 +1,108 @@
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: black;
+    font-family: 'Merriweather', serif;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.encabezado {
+    background-image: url(../img/reloj.jpg);
+    height: 100vh;
+
+    .navPropio {    
+        background-color: $colorPrincipal;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+    
+        .confBoton {
+            margin-right: 6rem;
+            @extend %inicioSesion !optional;
+        }
+
+        .nav-item a {
+            color: black! important;
+        
+            &:hover {
+                color: white! important;
+                transform: scale(1.1);  
+            }
+        }
+    }
+}
+
+.container-portada {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/firm2.jpg);
+    animation: movimiento 10s infinite linear alternate;
+    position: relative;
+    margin-bottom: -2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @keyframes movimiento {
+        from{
+            background-position: bottom left;
+        }to{
+            background-position: top right;
+        }
+    }
+}
+
+.container-detalles {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.detalles {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    bottom: 50px;
+    color: white;
+}
+.detalles h1 {
+    font-size: 40px;
+    font-weight: 100;
+    font-weight: bolder;
+}            
+
+.detalles p {
+    margin-top: 20px;
+    font-weight: bolder;
+}        
+
+.detalles ul li {
+    font-weight: bolder;
+}
+
+.detalles button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: blue;
+    bottom: 3rem;
+    color: white;
+    border-style: none;
+    border: 1px solid black;
+    transition: background 300ms;
+    cursor: pointer;
+    font-weight: bolder;
+
+    &:hover {
+        background: black; 
+    }
+} 
+ 
+
+
+   
+

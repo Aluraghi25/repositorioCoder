@@ -1,0 +1,10 @@
+@mixin navegation {
+    width: 100%;
+    z-index: 999;
+}
+
+@mixin subtitulo ($display, $color, $text-align) {
+    display: $display;
+    color: $color;
+    text-align: $text-align;
+}

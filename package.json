@@ -1,0 +1,24 @@
+{
+  "name": "proyectoworkforceluraghi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aluraghi25/repositorioCoder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aluraghi25/repositorioCoder/issues"
+  },
+  "homepage": "https://github.com/Aluraghi25/repositorioCoder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^1.3.3"
+  }
+}

@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
 
+/* VARIABLES */
+
 :root {
     --colorPrincipal:  orange;
     --font-size: 1.2rem;
@@ -10,15 +12,18 @@
     --colorLetras: white;
 }
 
+/* IMPORTANTISIMO CSS */
+
 *{
     margin: 0%;
     padding: 0%;
 }
 
+/*VIEJO ENCABEZADO HOME */
+
 .encabezado {
     background-image: url(../img/reloj.jpg);
     height: 100vh;
-    margin-bottom: -2rem;
 }
 
 .encabezadoDos {
@@ -29,15 +34,93 @@
     background-position: center center;
 }
 
+/* NUEVO ENCABEZADO HOME */
+
+.container-portada {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/firm2.jpg);
+    animation: movimiento 10s infinite linear alternate;
+    position: relative;
+    margin-bottom: -2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.container-detalles {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.detalles {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    bottom: 50px;
+    color: white;
+}
+
+.detalles h1 {
+    font-size: 40px;
+    font-weight: 100;
+    font-weight: bolder;
+}
+
+.detalles ul li {
+    font-weight: bolder;
+}
+
+.detalles p {
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+.detalles button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: blue;
+    bottom: 3rem;
+    color: white;
+    border-style: none;
+    border: 1px solid black;
+    transition: background 300ms;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.detalles button :hover {
+    background: black;
+}
+
+/* IMAGEN HOME */
+
+.horario-img {
+    margin-left: 2rem;
+}
+
 .imagen {
     width: 5rem;
 }
 
-.navPropio {
-    background-color: rgba(255, 166, 0, 0.923);
+/* COMPLEMENTO NUEVO MENU NAVEGACION */
+
+.navPropio {    
+    background-color: rgba(255, 166, 0, 0.981);
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
+    top: 0;
 }
 
 .nav-item a {
@@ -105,20 +188,21 @@ nav ul li a:hover {
 .titulo-principal {
     font-family: 'Merriweather', serif;
     font-size: large;
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
 .tituloFormato {
-    text-align: center;
-    margin: 2rem 0;
-    padding: 1rem 0;
+    text-align: right;
+    margin: 0;
+    padding: 3rem;
     font-size: 1.5rem;
     color: black;
     letter-spacing: 1px;
-    background-color: orange;
     width: 100%;
-    font-weight: bold;    
+    font-weight: bold; 
+    background: orange; 
+    text-align: center;  
 }
 
 .subtitulo {
@@ -148,28 +232,28 @@ nav ul li a:hover {
     font-size: medium;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     grid-area: firma;
 }
 
 .bi-linkedin {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .bi-instagram {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .bi-twitter {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .bi-youtube {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .seccion {
@@ -191,7 +275,7 @@ nav ul li a:hover {
 
 .imagenPie {
     margin-left: 5rem;
-    margin-top: 0.5rem;
+    margin-top: -0.5rem;
     grid-area: imagen;
 }
 
@@ -199,9 +283,9 @@ nav ul li a:hover {
 .companyName {
     font-size: medium;
     font-weight: bold;
-    margin-top: 0.5rem;
     margin-left: 2rem;
     grid-area: company-name;
+    margin-bottom: -1rem;
 }
 
 .infoNecesaria {
@@ -209,17 +293,14 @@ nav ul li a:hover {
     font-size: large;
     font-weight: bold;
     grid-area: info-necesaria;
-}
-
-.infoNecesaria p :hover {
-    color: white;
+    margin-bottom: -8rem;
 }
 
 .tituloRedes {
     display: flex;
     justify-content: right;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.1rem;
     text-decoration: underline;
     grid-area: titulo-redes;
 }
@@ -286,7 +367,7 @@ nav ul li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-55%, -50%);
     width: 400px;
     background: white;
     border-radius: 10px;
@@ -458,8 +539,6 @@ input[type="submit"] :hover {
     color: black;
     box-shadow: 7px 13px 37px #000;
     transform: translate(-8%, 25%);
-    top: 50%;
-    left: 50%;
 }
 
 .form-registrarse h3 {
@@ -486,12 +565,7 @@ input[type="submit"] :hover {
 }
 
 .form-registrarse a {
-    color: black;
-    text-decoration: none;
-}
-
-.form-registrarse a :hover {
-    color: black;
+    color: blue;
     text-decoration: underline;
 }
 
@@ -505,17 +579,6 @@ input[type="submit"] :hover {
     margin: 16px 0;
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERIES MOBILES */
 
@@ -575,7 +638,12 @@ input[type="submit"] :hover {
     }
 
     .form-registrarse {
-        
+        transform: translate(1%, 22%);
+        box-shadow: none;
+    }
+
+    .formularioInicio {
+        transform: translate(-50%, -38%);
     }
 }
 
